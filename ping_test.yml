@@ -2,4 +2,6 @@
 - hosts: all
   tasks:
   - name: Ping Windows Hosts
-    win_ping:
+  - action: ping
+    register: hello
+  - debug: msg="{hello.stdout}"
