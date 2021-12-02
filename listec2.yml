@@ -8,4 +8,4 @@
       register: ec2_facts
 
     - name: Print facts
-      debug: msg="{{ ec2_facts }}"
+      debug: {{ ec2_facts }}
